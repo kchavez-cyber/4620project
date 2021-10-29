@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class = "vertical"></div>
-<h1 class ="center">MeTube</h1>
+<h1 class ="center">Login</h1>
 
 <div class = "center">
 <FORM action="http://MeTube.com/registration/login" method="get">
@@ -26,7 +26,7 @@
     <LABEL for="Password">Password:</LABEL>
             <INPUT type="text" id="Password" name="Password"><BR>
     </P>
-    <input type="submit" value="Log in">
+    <input type="submit" value="Login">
 </FORM>
 
 <BR>

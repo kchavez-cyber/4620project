@@ -1,9 +1,4 @@
-<?php
-session_start();
 
-    #include 
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,24 +12,28 @@ session_start();
         .vertical{
             margin-bottom: 200px;
         }
-        </style>
+</style>
 </head>
 <body>
 <div class = "vertical"></div>
-<h1 class = "center">Registration</h1>
+<h1 class = "center">MeTube Sign up</h1>
 
 <div class = "center">
-<FORM action="http://MeTube.com/registration/adduser" method="post">
-        <P>
-        <LABEL for="firstname">First name:</LABEL>
-                <INPUT type="text" id="firstname" name="firstname"><BR>
-        <LABEL for="lastname">Last name: </LABEL>
-                <INPUT type="text" id="lastname" name="lastname"><BR>
-        <LABEL for="email">email</LABEL>
-                <INPUT type="text" id="email" name="email"><BR>
-        </P>
-        <input type="submit" value="Submit">
-</FORM>
+<form action="http://MeTube.com/registration/adduser" method="post">
+        <p>
+        <label for="fullname">Full name:</label>
+        <input type="text" name="name" placeholder="Full name..."><BR></BR>
+        <label for="email">E-mail</label>
+        <input type="text" name="email" placeholder="Email..."><BR></BR>
+        <label for="Username">Username</label>
+        <input type="text" name="uid" placeholder="Username..."><BR></BR>
+        <label for="Pasword">Password</label>
+        <input type="password" name="pwd" placeholder="Password..."><BR></BR>
+        <label for="email">Re-enter password</label>
+        <input type="password" name="pwdrepeat" placeholder="Repeat password..."><BR></BR>
+        </p>
+        <button type="submit" name="submit">Sign up</button>
+</form>
 </div>
 </body>
 </html>

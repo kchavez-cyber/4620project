@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>MeTube</title>
+<title>MeTube Login</title>
 <meta charset="UTF-8">
 <style>
     .center {
@@ -12,24 +12,22 @@
     .vertical{
         margin-bottom: 200px;
     }
-    </style>
+</style>
 </head>
 <body>
     <div class = "vertical"></div>
-<h1 class ="center">Login</h1>
+<h1 class ="center">MeTube Login</h1>
 
 <div class = "center">
-<FORM action="index.php" method="get">
-    <P>
-        
-    <LABEL for="Username">Username:</LABEL>
-            <INPUT type="text" id="Username" name="Username"><BR>
-    <LABEL for="Password">Password:</LABEL>
-            <INPUT type="text" id="Password" name="Password"><BR>
-    </P>
-    <input type="submit" value="Log in">
-</FORM>
-
+<p>
+    <form action="includes/login.inc.php" method="post">
+    <label for="Username">Username</label>
+      <input type="text" name="uid" placeholder="Username/Email..."><BR></BR>
+      <label for="Pasword">Password</label>
+      <input type="password" name="pwd" placeholder="Password..."><BR></BR>
+      <button type="submit" name="submit">Login</button>
+    </form> 
+</p>
 <BR>
 
 </div>
